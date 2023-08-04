@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../../css/fonts/TT-Hoves/TTHoves-Light.woff2") format("woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../css/fonts/TT-Hoves/TTHoves-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../css/fonts/TT-Hoves/TTHoves-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../css/fonts/TT-Hoves/TTHoves-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+$basic-font-family: "TT Hoves", sans-serif;
+$background-color: #FFF;
+$basic-text-color: #333;
+$secondary-text-color: #000;
+$title-color: #BDBDBD;
+$footer-background-color: #2C2C2C;
+$footer-text-color: #FFF;
