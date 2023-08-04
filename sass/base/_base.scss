@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $basic-font-family;
+    background-color: $background-color;
+    color: $basic-text-color;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+    color: $title-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
