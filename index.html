@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header__container">
         <a href="index.html">Logo</a>
         <nav class="nav">
@@ -27,53 +27,98 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div>
-            <h2>PROJECT</h2>
-            <h2>HOME</h2>
+        <div class="container hero__container">
+          <div class="hero__block">
             <div>
-              <button type="button"></button>
-              <button type="button"></button>
+              <h2 class="hero__title__project">PROJECT</h2>
+              <h2 class="hero__title__home">HOME</h2>
             </div>
-            <div>
-              <span>01</span>
-              <span>/</span>
-              <span>02</span>
+            <div class="hero__button__group">
+              <button class="hero__button" type="button">
+                <svg class="hero__icon" width="24" height="24" fill="#333">
+                  <use href="./images/icons.svg#arrow-left2"></use>
+                </svg>
+              </button>
+              <button class="hero__button" type="button">
+                <svg class="hero__icon" width="24" height="24">
+                  <use href="./images/icons.svg#arrow-right2"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="hero__slider">
+              <span class="hero__slider__number first">01</span>
+              <span class="hero__slider__number">02</span>
             </div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <a href="">More</a>
+          <div class="hero__img">
+            <img
+              srcset="./images/hero/hero_lg-@1x.png 1x, ./images/hero/hero_lg-@2x.png 2x"
+              src="./images/hero/hero_lg-@1x.png"
+              alt="Building"
+              width="770"
+            />
+            <a class="hero__link link-more" href="">
+              More
+              <svg class="hero__link__icon" width="24" height="24">
+                <use href="./images/icons.svg#arrow-right2"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
       <section>
-        <div class="container">
-          <div><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /></div>
-          <div>
+        <div class="container about__container">
+          <div class="about__images">
+            <img
+              srcset="./images/about/about1_lg-@1x.png 1x, ./images/about/about1_lg-@2x.png 2x"
+              src="./images/about/about1_lg-@1x.png"
+              alt="Building"
+              width="270"
+            />
+            <img
+              srcset="./images/about/about2_lg-@1x.png 1x, ./images/about/about2_lg-@2x.png 2x"
+              src="./images/about/about2_lg-@1x.png"
+              alt="Building"
+              width="270"
+            />
+            <img
+              srcset="./images/about/about3_lg-@1x.png 1x, ./images/about/about3_lg-@2x.png 2x"
+              src="./images/about/about3_lg-@1x.png"
+              alt="Building"
+              width="270"
+            />
+          </div>
+          <div class="about__info">
             <h3>About company</h3>
-            <p>
+            <p class="about__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industry's standard dummy text ever since the 1500s, when an unknown
               printer took a galley of type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into electronic typesetting,
               remaining essentially unchanged.
             </p>
-            <a href="">Read more</a>
+            <a class="about__link link-more" href="">
+              Read
+              <svg class="about__link__icon" width="24" height="24">
+                <use href="./images/icons.svg#arrow-right2"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container goals__container">
           <h3>Main goals</h3>
-          <div>
-            <div>
-              <h4>1</h4>
-              <p>Creating comfortable conditions and improving the quality of customer service</p>
+          <div class="goals__info">
+            <div class="goals__box">
+              <h4 class="goals__number">1</h4>
+              <p class="goals__text">
+                Creating comfortable conditions and improving the quality of customer service
+              </p>
             </div>
-            <div>
-              <h4>2</h4>
-              <p>
+            <div class="goals__box">
+              <h4 class="goals__number">2</h4>
+              <p class="goals__text">
                 Constantly improve the quality of services provided by training staff, purchasing
                 new equipment and increased advertising in the market
               </p>
