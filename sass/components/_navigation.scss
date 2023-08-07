@@ -1,5 +1,5 @@
 .nav{
-    margin-left: 330px;
+    margin-left: 365px;
 }
 
 .nav__list {
@@ -9,15 +9,14 @@
 
 .nav__link {
     position: relative;
-    // color: $basic-text-color;
     padding-top: 45px;
     padding-bottom: 45px;
     font-size: 12px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: 2.4px;
-        text-transform: uppercase;
-        color: $basic-text-color;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: $basic-text-color;
     // transition: color $animation;
 
     // &:hover,
