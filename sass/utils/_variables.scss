@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TT Hoves";
-    src: url("../../css/fonts/TT-Hoves/TTHoves-Light.woff2") format("woff2");
+    src: url("../css/fonts/TT-Hoves/TTHoves-Light.woff2") format("woff2");
     font-weight: 300;
 }
 @font-face {
@@ -18,11 +18,19 @@
     src: url("../css/fonts/TT-Hoves/TTHoves-Bold.woff2") format("woff2");
     font-weight: 700;
 }
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../css/fonts/SF-Pro-Display/SF-Pro-Display-Black.ttf") format("truetype");
+    font-weight: 900;
+}
 
 $basic-font-family: "TT Hoves", sans-serif;
+$goals-numbers-font-family: "SF Pro Display", sans-serif;
 $background-color: #FFF;
+$border-color: #F2F2F2;
 $basic-text-color: #333;
 $secondary-text-color: #000;
 $title-color: #BDBDBD;
+$slash-color: #E0E0E0;
 $footer-background-color: #2C2C2C;
 $footer-text-color: #FFF;
