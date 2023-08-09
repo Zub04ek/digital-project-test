@@ -1,4 +1,21 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: $background-color;
+}
+
 .header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+}
+
+.logo-caption {
+  position: absolute;
+  top: 29px;
+  right: 0px;
 }
