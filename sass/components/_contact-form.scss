@@ -1,0 +1,99 @@
+.contact-block {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 22px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form__group {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 14px 21px;
+  background-color: $input-background-color;
+  border-radius: 4px;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid #333;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    color: $input-placeholder-color;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-form__agreement {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 21px;
+}
+
+.icon-checked {
+  opacity: 0;
+  transition: opacity $animation;
+
+  .contact-form__checkbox:checked + .contact-form__icons & {
+    opacity: 1;
+  }
+}
+
+.icon-unchecked {
+  transition: opacity $animation;
+
+  .contact-form__checkbox:checked + .contact-form__icons & {
+    opacity: 0;
+  }
+}
+
+.contact-form__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+
+.contact-form__link {
+  display: inline-block;
+  text-decoration-line: underline;
+  font-weight: 500;
+  color: $secondary-text-color;
+}
+
+.contact-form__button {
+  position: relative;
+  width: 222px;
+  display: flex;
+  justify-content: start;
+  padding: 30px 49px 29px 47px;
+  color: $background-color;
+  background-color: $basic-text-color;
+}
+
+.contact-form__button__icon {
+  position: absolute;
+  top: 24px;
+  right: 49px;
+  fill: currentColor;
+}
