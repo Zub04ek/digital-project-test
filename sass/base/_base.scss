@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -81,4 +81,11 @@ section {
   letter-spacing: 2.4px;
   text-transform: uppercase;
   cursor: pointer;
+  transform: none;
+  transition: transform $animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }

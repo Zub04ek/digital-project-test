@@ -16,6 +16,13 @@
   position: relative;
   color: $background-color;
   margin-right: 100px;
+  transform: none;
+  transition: transform $animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 
 .footer__logo-img {
@@ -77,6 +84,13 @@
   line-height: 1.7143;
   letter-spacing: 0.42px;
   cursor: pointer;
+  transform: none;
+  transition: transform $animation;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
 }
 
 .footer__rights {
