@@ -1,39 +1,39 @@
 .about__container {
-    display: flex;
-    height: 465px;
-    gap: 30px;
-    padding: 30px 70px 0px 100px;
+  display: flex;
+  height: 465px;
+  gap: 30px;
+  padding: 30px 70px 0px 100px;
 }
 
 .about__images {
-    display: flex;
-    min-width: 570px;
-    gap: 30px;
-    flex-flow: column wrap;
-    justify-content: center;
+  display: flex;
+  min-width: 570px;
+  gap: 30px;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .about__info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about__text {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.563;
-    color: $secondary-text-color;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.563;
+  color: $secondary-text-color;
 }
 
 .about__link {
-    position: relative;
-    padding: 30px 64px 29px 65px;
-    width: 222px;
+  position: relative;
+  padding: 30px 64px 29px 65px;
+  width: 222px;
 }
 
 .about__link__icon {
-    position: absolute;
-    top: 24px;
-    right: 64px;
+  position: absolute;
+  top: 24px;
+  right: 64px;
 }

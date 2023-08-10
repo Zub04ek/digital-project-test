@@ -26,6 +26,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -108,12 +109,22 @@ section {
   letter-spacing: 2.4px;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-more:hover, .link-more:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header {
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
   background-color: #FFF;
 }
 
@@ -128,6 +139,16 @@ section {
 
 .header__logo {
   position: relative;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__logo:hover, .header__logo:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .logo-caption {
@@ -158,6 +179,45 @@ section {
   text-transform: uppercase;
   color: #333;
 }
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: 39.83px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 0.971px;
+  background-color: #333;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 39.83px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 0.971px;
+  background-color: #333;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover::before, .nav__link:hover::after, .nav__link:focus::before, .nav__link:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 .nav__link.current::before {
   content: "";
   position: absolute;
@@ -167,6 +227,9 @@ section {
   width: 100%;
   height: 0.971px;
   background-color: #333;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .nav__link.current::after {
   content: "";
@@ -177,6 +240,9 @@ section {
   width: 100%;
   height: 0.971px;
   background-color: #333;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .hero {
@@ -184,6 +250,7 @@ section {
 }
 
 .hero__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,6 +290,17 @@ section {
   border: 1px solid #F2F2F2;
   background-color: #FFF;
   cursor: pointer;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button:hover, .hero__button:focus {
+  border: 1px solid #333;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hero__icon {
@@ -234,6 +312,10 @@ section {
   display: -ms-flexbox;
   display: flex;
   gap: 88px;
+}
+
+.slider {
+  width: 770px;
 }
 
 .hero__slider__number {
@@ -256,6 +338,9 @@ section {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   background-color: #E0E0E0;
+}
+.hero__slider__number.active {
+  color: #333;
 }
 
 .hero__img {
@@ -453,6 +538,7 @@ section {
   margin-left: auto;
   background-color: #333;
   color: #FFF;
+  border-radius: 4px;
 }
 
 .allProjects__link__icon {
@@ -598,6 +684,7 @@ textarea {
   padding: 30px 49px 29px 47px;
   color: #FFF;
   background-color: #333;
+  border-radius: 4px;
 }
 
 .contact-form__button__icon {
@@ -627,6 +714,16 @@ textarea {
   position: relative;
   color: #FFF;
   margin-right: 100px;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__logo:hover, .footer__logo:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer__logo-img {
@@ -704,6 +801,16 @@ textarea {
   line-height: 1.7143;
   letter-spacing: 0.42px;
   cursor: pointer;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__link:hover, .footer__link:focus {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .footer__rights {
